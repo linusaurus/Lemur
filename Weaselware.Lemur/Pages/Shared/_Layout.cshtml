@@ -1,0 +1,162 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Purchase-Weasel</title>
+
+
+    <environment include="Development">
+        <link rel="stylesheet" href="~/lib/bootstrap/css/bootstrap.css"/>
+        <link rel="stylesheet" href="~/css/dashboard.css"/>
+        <link rel="stylesheet" href="~/css/site.css" />
+    </environment>
+    <environment exclude="Development">
+        <link rel="stylesheet" href="~/lib/bootstrap/css/bootstrap.min.css"/> 
+        <link rel="stylesheet" href="~/css/dashboard.min.css"/>
+        <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
+    </environment>
+</head>
+<body>
+
+    <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
+        <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="./Index">Design Synthesis</a>
+        <ul class="navbar-nav px-3">
+            <li class="nav-item text-nowrap">
+                
+                <partial name="_CookieConsentPartial" />
+            </li>
+            <li class="nav-item text-nowrap">
+                <partial name="_LoginPartial" />
+                <!--<partial name="_CookieConsentPartial" />-->
+            </li>
+
+        </ul>
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+                <div class="sidebar-sticky">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link active" asp-page="/Index">
+                                <span data-feather="home"></span>
+                                Dashboard <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-page="/Jobs/index">
+                                <span data-feather="folder"></span>
+                                Jobs
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-page="/Products/ProductsList">
+                                <span data-feather="package"></span>
+                                Products
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-page="/Orders/index">
+                                <span data-feather="shopping-bag"></span>
+                                Orders
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" asp-page="/Parts/index">
+                                <span data-feather="git-pull-request"></span>
+                                Parts
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-page="/Resource/List">
+                                <span data-feather="link"></span>
+                                Resources
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-page="/Suppliers/SupplierList">
+                                <span data-feather="truck"></span>
+                                Suppliers
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-page="/Inventory/InventoryList">
+                                <span data-feather="external-link"></span>
+                                Inventory
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-page="/Asset/List">
+                                <span data-feather="tag"></span>
+                                Assets
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-page="/Test/index">
+                                <span data-feather="bar-chart-2"></span>
+                                Test Reports
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-page="/Employee/EmployeeList">
+                                <span data-feather="users"></span>
+                                Employees
+                            </a>
+                        </li>
+                    </ul>
+
+                    <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                        <span>Reports</span>
+                        <a class="d-flex align-items-center text-muted" href="#">
+                            <span data-feather="plus-circle"></span>
+                        </a>
+                    </h6>
+                    <ul class="nav flex-column mb-2">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span data-feather="file-text"></span>
+                                Outstanding Orders
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span data-feather="file-text"></span>
+                                Scheduled Deliveries
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+          
+            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
+                
+                 
+
+                    <div class="container body-content">
+                        @RenderBody()
+                        <hr />
+                        <footer>
+                            <p>&copy; 2018 - Weaselware.Lemur</p>
+                        </footer>
+                    </div>
+            </main>
+        </div>
+        </div>
+            <environment include="Development">
+                <script src="~/lib/jquery/jquery.js"></script>
+                <script src="~/lib/bootstrap/js/bootstrap.js"></script>
+                <script src="~/js/site.js" asp-append-version="true"></script>
+            </environment>
+            <!-- Icons -->
+            <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+            <script>
+                feather.replace()
+            </script>
+
+            @RenderSection("Scripts", required: false)
+
+</body>
+</html>

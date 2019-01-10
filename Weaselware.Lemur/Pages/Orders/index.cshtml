@@ -1,0 +1,89 @@
+﻿@page
+@model Weaselware.Lemur.Pages.Orders.indexModel
+@{
+    ViewData["Title"] = "index";
+}
+
+<h5>Purchase Orders</h5>
+
+<p>
+    <a class="btn btn-secondary btn-sm" asp-page="Create">Create New</a>
+    
+</p>
+
+<form asp-page="./Index" method="get" class="form-inline">
+    <input type="text" name="SearchString" value="@Model.CurrentFilter" />
+    <button type="submit" class="btn btn-sm btn-secondary ml-2">
+        <span data-feather="search" aria-hidden="true"></span> Search
+    </button>
+    <a class="ml-2"    asp-page="./Index"> |  Back to full List</a>
+</form>
+<br/>
+<div class="table-responsive">
+<table class="table table-striped table-sm p-0">
+    <thead>
+        <tr>
+            <th>
+                <a>@Html.DisplayNameFor(model => model.Orders[0].PurchaseOrderID)</a>
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Orders[0].JobName)
+            </th>
+            <th>
+                <a>
+                    @Html.DisplayNameFor(model => model.Orders[0].Supplier)
+                </a>
+            </th>
+            <th>
+                <a>
+                    Recieved
+                </a>
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Orders)
+        {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.PurchaseOrderID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.JobName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Supplier)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Received)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.PurchaseOrderID">Edit</a> |
+                <a asp-page="./OrderDetail" asp-route-OrderID="@item.PurchaseOrderID">Open</a> |
+                <a asp-page="./Receive" asp-route-id="@item.PurchaseOrderID">Receive</a>
+                <!-- <a asp-page="./Delete" asp-route-id="@item.PurchaseOrderID">Delete</a>-->
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>
+ </div>
+@{
+    var prevDisabled = !Model.Orders.HasPreviousPage ? "disabled" : "";
+    var nextDisabled = !Model.Orders.HasNextPage ? "disabled" : "";
+}
+
+<a asp-page="./Index"
+   asp-route-pageIndex="@(Model.Orders.PageIndex - 1)"
+   asp-route-currentFilter="@Model.CurrentFilter"
+   class="btn btn-sm btn-secondary @prevDisabled">
+    Previous
+</a>
+<a asp-page="./Index"
+   asp-route-pageIndex="@(Model.Orders.PageIndex + 1)"
+   asp-route-currentFilter="@Model.CurrentFilter"
+   class="btn btn-sm btn-secondary  @nextDisabled">
+    Next
+
+</a>

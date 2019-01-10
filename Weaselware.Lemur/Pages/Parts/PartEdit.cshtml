@@ -1,0 +1,193 @@
+﻿@page
+@model Weaselware.Lemur.Pages.Parts.PartEditModel
+@{
+    ViewData["Title"] = "PartEdit";
+}
+
+<h5>Part# - @Model.Part.PartID</h5>
+
+<form method="post">
+    <!--First Line-->
+    <div class="form-row">
+        <div class="form-group col-md-1">
+            <label asp-for="Part.PartID"></label>
+            <input class="form-control form-control-sm text-center" asp-for="Part.PartID" readonly="readonly"/>
+            <span asp-validation-for="Part.PartID"></span>
+            </div>
+        <div class="form-group col-md-8">
+            <label asp-for="Part.Description"></label>
+            <input asp-for="Part.Description"  class="form-control form-control-sm"  placeholder="Description"/>
+            <span asp-validation-for="Part.Description"></span>
+        </div>
+        <div class="form-group col-md-3">
+            <label asp-for="Part.ItemName"></label>
+            <input asp-for="Part.ItemName"  class="form-control form-control-sm"  placeholder=" Item Name">
+            <span asp-validation-for="Part.ItemName"></span>
+        </div>
+    </div>
+    <!--Second Line-->
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label asp-for="Part.SupplierDescription"></label>
+            <input asp-for="Part.SupplierDescription" class="form-control form-control-sm" placeholder="Supplier Description">
+            <span asp-validation-for="Part.SupplierDescription"></span>
+        </div>
+        <div class="form-group col-md-2 mt-4">
+            <div class="form-check form-check-inline">
+                <input asp-for="Part.UseSupplierName" class="form-check-input" type="checkbox"/>
+                <label asp-for="Part.UseSupplierName" class="form-check-label"></label>                             
+            </div>
+        </div>
+        <div class="form-group col-md-4">
+                <input type="hidden"  asp-for="Part.SupplierID" />
+                <label asp-for="Part.SupplierName"></label>
+                <input asp-for="Part.SupplierName" class="form-control form-control-sm"  placeholder="Supplier Name" readonly="readonly" autocomplete="off">       
+        </div>
+     </div>
+        <!--third line -->
+    <div class="form-row text-center bg-light p-t-1">
+        <div class="form-group col-md-4">
+            <input type="hidden" asp-for="Part.ManuID" />
+            <label asp-for="Part.Manufacturer" ></label>
+            <input asp-for="Part.Manufacturer" class="form-control form-control-sm" placeholder="Manufacturer" autocomplete="off"/>
+        </div>
+        <div class="form-group col-md-1">
+            <input type="hidden" asp-for="Part.UID" />
+            <label asp-for="Part.UnitOfMeasure"></label>
+            <input type="text" asp-for="Part.UnitOfMeasure" class="form-control form-control-sm text-center" />
+        </div>
+        <div class="form-group col-md-1">
+            <label for="ddd">Cost</label>
+            <input type="text" asp-for="Part.Cost" class="form-control form-control-sm text-center" />
+        </div>
+        <div class="form-group col-md-1">
+            <label for="ddd">Weight</label>
+            <input type="text" asp-for="Part.Weight" class="form-control form-control-sm text-center" />
+        </div>
+        <div class="form-group col-md-1">
+            <label asp-for="Part.Waste"></label>
+            <input  asp-for="Part.Waste" class="form-control form-control-sm text-center" />
+        </div>
+        <div class="form-group col-md-1">
+            <label for="ddd">Mark-Up</label>
+            <input type="text" asp-for="Part.MarkUp" class="form-control form-control-sm text-center"  />
+        </div>
+        <div class="form-group col-md-1">
+            <label asp-for="Part.CreatedBy"></label>
+            <input type="text" asp-for="Part.CreatedBy" class="form-control form-control-sm text-center" placeholder="Creator"/>
+        </div>
+        <div class="form-group col-md-2">
+            <label asp-for="Part.DateAdded"></label>
+            <input asp-for="Part.DateAdded" class="form-control form-control-sm text-center"  placeholder="Date Added"/>
+        </div>
+    </div>
+
+    <div class="form-row text-center">
+        <div class=" form-group-lg col-lg-1">
+            <label asp-for="Part.Location"></label>
+            <input asp-for="Part.Location" class="form-control form-control-sm text-center"  autocomplete="off"/>
+        </div>
+        <div class=" form-group-lg col-lg-2">
+            <label>Last Modified</label>
+            <input type="text" asp-for="Part.LastModified" class="form-control form-control-sm text-center" id="parttype" placeholder="Last Modified"/>
+        </div>
+        <div class=" form-group-lg col-lg-2">
+            <label>Modified By</label>
+            <input type="text" asp-for="Part.ModifiedBy" class="form-control form-control-sm text-center" id="parttype" placeholder="Last Modified By"/>
+        </div>
+        <div class=" form-group-sm col-lg-2">
+            <label>Stock On Hand</label>
+            <input type="text" asp-for="Part.StockOnHand" class="form-control form-control-sm text-center" id="parttype" placeholder="Stock"/>
+        </div>
+        <div class=" form-group-lg col-lg-4">
+            <div class=" btn-group-sm btn-group-justified mt-4">
+
+                <button asp-page="/Inventory/InventoryList" class="btn-default">Show Transactions</button>
+                <button asp-page="/Inventory/InventoryList" class="btn-default">Set Stock Level</button>
+
+            </div>
+        </div>
+    </div>
+    <!--Resource Portion Header and Menu-->
+    <div class="container mt-4">
+        <div class="row col-12">
+            <div class="col-lg-8">
+                <h5>Resources</h5>
+            </div>
+            <div class="form-row col-lg-4">
+                <div class="btn-group-sm btn-group-justified">
+                    <button asp-page="/Inventory/InventoryList" class="btn btn-default">Create New</button>
+                    <button asp-page="/Inventory/InventoryList" class="btn btn-default">Attach Existing</button>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <table class="table table-responsive-xl mt-xl-4 table-light">
+        <thead class="thead-light">
+            <tr>
+                <th scope="col">DocID</th>
+                <th scope="col">Date Created</th>
+                <th scope="col">Creator</th>
+                <th scope="col">Description</th>
+                <th scope="col">View</th>
+                <th scope="col">Ext</th>
+                <th scope="col"></th>
+                <th scope="col"></th>
+                <th scope="col"></th>
+                <th scope="col"></th>
+            </tr>
+        </thead>
+        <tbody>
+        @foreach (var documentsDto in @Model.Part.Documents)
+        {
+            <tr>
+                <td>
+                    <a asp-page="/Resource/Edit" asp-id="id"> @documentsDto.DocID</a>
+                </td>
+                <td>
+                    @documentsDto.DateCreated.ToShortDateString()
+                </td>
+                <td>
+                    @documentsDto.Creator
+                </td>
+                <td>
+                    @documentsDto.Description
+                </td>
+                <td>
+                    @documentsDto.DocumentView
+                </td>
+                <td>
+                    @documentsDto.Path
+                </td>
+                <td class="form-group">
+                    <a asp-page="/Resource/Edit" asp-route-id="@documentsDto.DocID">
+                        <span data-feather="eye"></span>
+                    </a>
+                </td>
+                <td>
+                    <a class="nav-link p-0" asp-page="/Resource/Edit">
+                        <span data-feather="link-2"></span>
+
+                    </a>
+                </td>
+                <td>
+                    <a class="nav-link p-0" asp-page="/Resource/Edit">
+                        <span data-feather="edit-2"></span>
+
+                    </a>
+                </td>
+                <td>
+                    <a class="nav-link p-0" asp-page="/Resource/Edit">
+                        <span data-feather="trash-2"></span>
+
+                    </a>
+                </td>
+            </tr>
+        }
+        </tbody>
+
+    </table>
+
+     <button type="submit" class="btn btn-primary mt-4" >Save</button>
+</form>

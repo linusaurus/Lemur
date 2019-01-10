@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2046
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Weaselware.Lemur", "Weaselware.Lemur\Weaselware.Lemur.csproj", "{40426592-818F-4AE9-ADE7-646D5AB18226}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Weaselware.Lemur.Tests", "Weaselware.Lemur.Tests\Weaselware.Lemur.Tests.csproj", "{26CDFE48-2DFB-4EF3-99ED-1FF110236541}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{40426592-818F-4AE9-ADE7-646D5AB18226}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40426592-818F-4AE9-ADE7-646D5AB18226}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40426592-818F-4AE9-ADE7-646D5AB18226}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40426592-818F-4AE9-ADE7-646D5AB18226}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26CDFE48-2DFB-4EF3-99ED-1FF110236541}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26CDFE48-2DFB-4EF3-99ED-1FF110236541}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26CDFE48-2DFB-4EF3-99ED-1FF110236541}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26CDFE48-2DFB-4EF3-99ED-1FF110236541}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {20D17249-FBB5-4D10-A5DB-A896CE0C4CD1}
+	EndGlobalSection
+EndGlobal

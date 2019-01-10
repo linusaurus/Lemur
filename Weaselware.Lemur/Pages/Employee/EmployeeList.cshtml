@@ -1,0 +1,90 @@
+﻿@page
+@model EmployeeListModel
+@{
+
+}
+
+
+<h5>Purchaser - Employees</h5>
+
+<p>
+    <a class="btn btn-secondary btn-sm" disabled asp-page="Create" >Create New</a>
+
+</p>
+
+<form asp-page="./EmployeeList" method="get" class="form-inline">
+    <input type="text" name="SearchString" value="@Model.CurrentFilter" />
+    <button type="submit" class="btn btn-sm btn-secondary ml-2">
+        <span data-feather="search" aria-hidden="true"></span> Search
+    </button>
+    <a class="ml-2" asp-page="./EmployeeList"> |  Back to full List</a>
+</form>
+<br />
+<div class="table-responsive">
+    <table class="table table-striped table-sm p-0">
+        <thead>
+            <tr>
+                <th>
+                    <a>@Html.DisplayNameFor(model => model.Employees[0].EmployeeID)</a>
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Employees[0].Name)
+                </th>
+                <th>
+                    <a>
+                        @Html.DisplayNameFor(model => model.Employees[0].Email)
+                    </a>
+                </th>
+                <th>
+                    <a>
+                        @Html.DisplayNameFor(model => model.Employees[0].IsPurchaser)
+                    </a>
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.Employees)
+            {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.EmployeeID)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Email)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.IsPurchaser)
+                </td>
+                <td>
+                    <a asp-page="./Edit" asp-route-id="@item.EmployeeID">Edit</a> |
+                    <a asp-page="./OrderDetail" asp-route-OrderID="@item.EmployeeID">Orders</a> |
+                    
+                    <!-- <a asp-page="./Delete" asp-route-id="@item.EmployeeID">Delete</a>-->
+                </td>
+            </tr>
+            }
+        </tbody>
+    </table>
+</div>
+@{
+    var prevDisabled = !Model.Employees.HasPreviousPage ? "disabled" : "";
+    var nextDisabled = !Model.Employees.HasNextPage ? "disabled" : "";
+}
+
+<a asp-page="./Index"
+   asp-route-pageIndex="@(Model.Employees.PageIndex - 1)"
+   asp-route-currentFilter="@Model.CurrentFilter"
+   class="btn btn-sm btn-secondary @prevDisabled">
+    Previous
+</a>
+<a asp-page="./Index"
+   asp-route-pageIndex="@(Model.Employees.PageIndex + 1)"
+   asp-route-currentFilter="@Model.CurrentFilter"
+   class="btn btn-sm btn-secondary  @nextDisabled">
+    Next
+
+</a>

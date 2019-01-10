@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\Users\rich.DESIGNSYNTHESIS\Documents\WebSite</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="DefaultConnection">
+      <Value>Data Source=192.168.10.3%3bInitial Catalog=Badger%3bUser ID=sa%3bPassword=Kx09a32x%3b</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+  <ItemGroup>
+    <File Include="bundleconfig.json">
+      <publishTime>12/04/2018 10:04:48</publishTime>
+    </File>
+    <File Include="wwwroot/css/dashboard.css">
+      <publishTime>12/03/2018 10:58:01</publishTime>
+    </File>
+    <File Include="wwwroot/css/dashboard.min.css">
+      <publishTime>12/04/2018 15:12:53</publishTime>
+    </File>
+    <File Include="wwwroot/css/site.css">
+      <publishTime>11/29/2018 16:51:31</publishTime>
+    </File>
+    <File Include="wwwroot/css/site.min.css">
+      <publishTime>12/04/2018 15:12:53</publishTime>
+    </File>
+    <File Include="wwwroot/favicon.ico">
+      <publishTime>10/17/2018 14:29:12</publishTime>
+    </File>
+    <File Include="wwwroot/images/banner1.svg">
+      <publishTime>10/17/2018 14:29:12</publishTime>
+    </File>
+    <File Include="wwwroot/images/banner2.svg">
+      <publishTime>10/17/2018 14:29:12</publishTime>
+    </File>
+    <File Include="wwwroot/images/banner3.svg">
+      <publishTime>10/17/2018 14:29:12</publishTime>
+    </File>
+    <File Include="wwwroot/images/logo-01.png">
+      <publishTime>12/30/2013 21:51:08</publishTime>
+    </File>
+    <File Include="wwwroot/js/site.js">
+      <publishTime>11/07/2018 15:07:53</publishTime>
+    </File>
+    <File Include="wwwroot/js/site.min.js">
+      <publishTime>12/04/2018 15:12:53</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/css/bootstrap-grid.css">
+      <publishTime>11/27/2018 11:53:42</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/css/bootstrap-grid.css.map">
+      <publishTime>11/27/2018 11:53:42</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/css/bootstrap-grid.min.css">
+      <publishTime>11/27/2018 11:53:42</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/css/bootstrap-grid.min.css.map">
+      <publishTime>11/27/2018 11:53:42</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/css/bootstrap-reboot.css">
+      <publishTime>11/27/2018 11:53:42</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/css/bootstrap-reboot.css.map">
+      <publishTime>11/27/2018 11:53:42</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/css/bootstrap-reboot.min.css">
+      <publishTime>11/27/2018 11:53:42</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/css/bootstrap-reboot.min.css.map">
+      <publishTime>11/27/2018 11:53:42</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/css/bootstrap.css">
+      <publishTime>11/27/2018 11:53:42</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/css/bootstrap.css.map">
+      <publishTime>11/27/2018 11:53:42</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/css/bootstrap.min.css">
+      <publishTime>11/27/2018 11:53:42</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/css/bootstrap.min.css.map">
+      <publishTime>11/27/2018 11:53:42</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-theme.css">
+      <publishTime>10/15/2018 16:22:39</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-theme.css.map">
+      <publishTime>10/15/2018 16:22:39</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+      <publishTime>10/15/2018 16:22:39</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-theme.min.css.map">
+      <publishTime>10/15/2018 16:22:39</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap.css">
+      <publishTime>10/15/2018 16:22:39</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap.css.map">
+      <publishTime>10/15/2018 16:22:39</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap.min.css">
+      <publishTime>10/15/2018 16:22:39</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map">
+      <publishTime>10/15/2018 16:22:39</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.eot">
+      <publishTime>10/15/2018 16:22:39</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.svg">
+      <publishTime>10/15/2018 16:22:39</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>10/15/2018 16:22:39</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff">
+      <publishTime>10/15/2018 16:22:39</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2">
+      <publishTime>10/15/2018 16:22:39</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/js/bootstrap.js">
+      <publishTime>10/15/2018 16:22:39</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/js/bootstrap.min.js">
+      <publishTime>10/15/2018 16:22:39</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/js/npm.js">
+      <publishTime>10/15/2018 16:22:39</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/js/bootstrap.bundle.js">
+      <publishTime>11/27/2018 12:13:27</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/js/bootstrap.bundle.js.map">
+      <publishTime>11/27/2018 12:13:27</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/js/bootstrap.bundle.min.js">
+      <publishTime>11/27/2018 12:13:27</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/js/bootstrap.bundle.min.js.map">
+      <publishTime>11/27/2018 12:13:27</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/js/bootstrap.js">
+      <publishTime>11/27/2018 12:13:27</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/js/bootstrap.js.map">
+      <publishTime>11/27/2018 12:13:27</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/js/bootstrap.min.js">
+      <publishTime>11/27/2018 12:13:27</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/js/bootstrap.min.js.map">
+      <publishTime>11/27/2018 12:13:27</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/LICENSE">
+      <publishTime>11/27/2018 10:55:40</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/package.json">
+      <publishTime>11/27/2018 10:55:40</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery-validation-unobtrusive/.bower.json">
+      <publishTime>10/15/2018 16:22:39</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js">
+      <publishTime>10/15/2018 16:22:39</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js">
+      <publishTime>10/15/2018 16:22:39</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt">
+      <publishTime>10/15/2018 16:22:39</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery-validation/additional-methods.js">
+      <publishTime>10/15/2018 16:22:39</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery-validation/additional-methods.min.js">
+      <publishTime>10/15/2018 16:22:39</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery-validation/jquery.validate.js">
+      <publishTime>10/15/2018 16:22:39</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery-validation/jquery.validate.min.js">
+      <publishTime>10/15/2018 16:22:39</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery/bower.json">
+      <publishTime>11/27/2018 10:54:48</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery/core.js">
+      <publishTime>11/27/2018 12:27:38</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery/dist/jquery.js">
+      <publishTime>10/15/2018 16:22:39</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery/dist/jquery.min.js">
+      <publishTime>10/15/2018 16:22:39</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery/dist/jquery.min.map">
+      <publishTime>10/15/2018 16:22:39</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery/jquery.js">
+      <publishTime>11/27/2018 12:27:38</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery/jquery.min.js">
+      <publishTime>11/27/2018 12:27:38</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery/jquery.min.map">
+      <publishTime>11/27/2018 12:27:38</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery/jquery.slim.js">
+      <publishTime>11/27/2018 12:27:38</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery/jquery.slim.min.js">
+      <publishTime>11/27/2018 12:27:38</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery/jquery.slim.min.map">
+      <publishTime>11/27/2018 12:27:38</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery/LICENSE.txt">
+      <publishTime>11/27/2018 10:54:48</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery/package.json">
+      <publishTime>11/27/2018 10:54:48</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery/README.md">
+      <publishTime>11/27/2018 10:54:48</publishTime>
+    </File>
+    <File Include="wwwroot/Scripts/autocomplete.js">
+      <publishTime>11/12/2018 13:39:17</publishTime>
+    </File>
+    <File Include="wwwroot/Scripts/autocomplete.min.js">
+      <publishTime>11/12/2018 13:39:17</publishTime>
+    </File>
+    <File Include="wwwroot/Scripts/jquery-1.6.2.min.js">
+      <publishTime>11/12/2018 15:46:36</publishTime>
+    </File>
+    <File Include="wwwroot/Scripts/jquery-ui-1.8.15.custom.min.js">
+      <publishTime>11/12/2018 15:46:36</publishTime>
+    </File>
+    <File Include="wwwroot/Styles/images/ui-bg_diagonals-thick_18_b81900_40x40.png">
+      <publishTime>11/12/2018 14:29:03</publishTime>
+    </File>
+    <File Include="wwwroot/Styles/images/ui-bg_diagonals-thick_20_666666_40x40.png">
+      <publishTime>11/12/2018 14:29:03</publishTime>
+    </File>
+    <File Include="wwwroot/Styles/images/ui-bg_glass_100_f6f6f6_1x400.png">
+      <publishTime>11/12/2018 14:29:03</publishTime>
+    </File>
+    <File Include="wwwroot/Styles/images/ui-bg_glass_100_fdf5ce_1x400.png">
+      <publishTime>11/12/2018 14:29:03</publishTime>
+    </File>
+    <File Include="wwwroot/Styles/images/ui-bg_glass_65_ffffff_1x400.png">
+      <publishTime>11/12/2018 14:29:03</publishTime>
+    </File>
+    <File Include="wwwroot/Styles/images/ui-bg_gloss-wave_35_f6a828_500x100.png">
+      <publishTime>11/12/2018 14:29:03</publishTime>
+    </File>
+    <File Include="wwwroot/Styles/images/ui-bg_highlight-soft_100_eeeeee_1x100.png">
+      <publishTime>11/12/2018 14:29:03</publishTime>
+    </File>
+    <File Include="wwwroot/Styles/images/ui-bg_highlight-soft_75_ffe45c_1x100.png">
+      <publishTime>11/12/2018 14:29:03</publishTime>
+    </File>
+    <File Include="wwwroot/Styles/images/ui-icons_222222_256x240.png">
+      <publishTime>11/12/2018 14:29:03</publishTime>
+    </File>
+    <File Include="wwwroot/Styles/images/ui-icons_228ef1_256x240.png">
+      <publishTime>11/12/2018 14:29:03</publishTime>
+    </File>
+    <File Include="wwwroot/Styles/images/ui-icons_ef8c08_256x240.png">
+      <publishTime>11/12/2018 14:29:03</publishTime>
+    </File>
+    <File Include="wwwroot/Styles/images/ui-icons_ffd27a_256x240.png">
+      <publishTime>11/12/2018 14:29:03</publishTime>
+    </File>
+    <File Include="wwwroot/Styles/images/ui-icons_ffffff_256x240.png">
+      <publishTime>11/12/2018 14:29:03</publishTime>
+    </File>
+    <File Include="wwwroot/Styles/jquery-ui-1.8.15.custom.css">
+      <publishTime>11/13/2018 15:18:52</publishTime>
+    </File>
+    <File Include="wwwroot/Styles/site.css">
+      <publishTime>11/12/2018 16:07:59</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

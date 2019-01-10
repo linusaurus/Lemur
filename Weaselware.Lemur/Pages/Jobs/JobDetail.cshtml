@@ -1,0 +1,89 @@
+﻿@page
+@model Weaselware.Lemur.Pages.Jobs.JobDetailModel
+@{
+    
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Job Detail</title>
+</head>
+<body>
+
+    <h5>@Model._Job.JobID.ToString() - @Model._Job.JobName</h5>
+
+    <form method="post">
+        <!--First Line-->
+        <div class="form-row">
+            <div class="form-group col-md-4">
+                <label asp-for="_Job.JobName"></label>
+                <input class="form-control form-control-sm text-center" asp-for="_Job.JobName" readonly="readonly" />
+                <span asp-validation-for="_Job.JobName"></span>
+            </div>
+            <div class="form-group col-md-6">
+                <label asp-for="_Job.JobCostName"></label>
+                <input asp-for="_Job.JobCostName" class="form-control form-control-sm" placeholder="Description" />
+                <span asp-validation-for="_Job.JobCostName"></span>
+            </div>
+            <div class="form-group col-md-1">
+                <label asp-for="_Job.JobOrdersTotal"></label>
+                <input asp-for="_Job.JobOrdersTotal" class="form-control form-control-sm text-center" />
+                <span asp-validation-for="_Job.JobOrdersTotal"></span>
+            </div>
+            <div class="form-group col-md-1">
+                <label asp-for="_Job.JobLaborTotal"></label>
+                <input asp-for="_Job.JobLaborTotal" class="form-control form-control-sm text-center" />               
+            </div>
+        </div>
+        </form>
+
+
+        <div class="table-responsive">
+            <table class="table table-striped table-sm p-0">
+                <thead>
+                    <tr>
+                        <th>Order No</th>
+                        <th>Order Date</th>
+                        <th>
+                            Supplier
+                        <th>
+                            Order Total
+
+                        </th>
+                        <th>
+                            Action
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model._Job.JobOrders)
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.PurchaseOrderID)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.OrderDate)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Supplier)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.OrderTotal)
+                            </td>
+                            <td>
+                                <a asp-page="/Orders/OrderDetail" asp-route-OrderID="@item.PurchaseOrderID">
+                                    <span data-feather="eye"></span>
+                                </a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+
+</body>
+</html>
