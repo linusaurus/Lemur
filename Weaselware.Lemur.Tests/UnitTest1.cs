@@ -113,16 +113,35 @@ namespace Weaselware.Lemur.Test
         }
 
         [Fact]
-        public async void TestInventoryGet()
+        public void TestTransactionTypes()
         {
 
-           
-            Assert.True(n.JobID == 1265);
+            using (var db = new PurchaseSQLDBContext(Utilites.TestDbContextOptions()))
+            {
+                var result = db.TransActionType.ToList();
+                Assert.True(result.Count > 0);
                 
-         }
+            }
+           
+
+        }
+
+        [Fact]
+        public void TestTransactionTypesFind()
+        {
+
+            using (var db = new PurchaseSQLDBContext(Utilites.TestDbContextOptions()))
+            {
+                var result = db.TransActionType.Find(1);
+                Assert.True(result.TransactionsTypeID == 1);
+
+            }
 
 
-        
+        }
+
+
+
 
     }
 }

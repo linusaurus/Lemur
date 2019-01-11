@@ -45,6 +45,7 @@ namespace PurchaseSQLDB.DataAccess.EFCode
         public virtual DbSet<ShipBy> ShipBy { get; set; }
         public virtual DbSet<UnitOfMeasure> UnitOfMeasure { get; set; }
         public virtual DbSet<NFRC> NFRC { get; set; }
+        public virtual DbSet<TransActionType> TransActionType { get; set; }
         //public DbSet<Requisition> Requisition { get; set; }
        // public DbSet<RequisitionItem> RequisitionItem { get; set; }
         //public DbSet<WorkOrder> WorkOrder { get; set; }
