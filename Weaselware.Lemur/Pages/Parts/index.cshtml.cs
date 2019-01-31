@@ -44,7 +44,7 @@ namespace Weaselware.Lemur.Pages.Parts
             IQueryable<PartDto> PartIQ = _context.Part.Select(p => new PartDto
             {
                 PartID = p.PartID,
-                Description = p.ItemDescription.TrimEnd(),
+                Description = p.ItemDescription.Substring(0,78),
                 PartNumber = p.ItemName,
                 Location = p.Location,
                 SKU = p.SKU,

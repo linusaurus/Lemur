@@ -69,7 +69,7 @@ using Weaselware.Lemur.Data;
             WriteLiteral("\r\n\r\n\r\n<div class=\"row\">\r\n    <div class=\"col-md-3 \">\r\n        <h2>Design Synthesis</h2>\r\n        <ul>\r\n            <li>");
             EndContext();
             BeginContext(194, 72, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e0fab9be56bb456a8bd76eea8a091ddf", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9bc514e4459a4294873addf41f401488", async() => {
                 BeginContext(240, 22, true);
                 WriteLiteral("Create Purchase Order ");
                 EndContext();
@@ -92,7 +92,7 @@ using Weaselware.Lemur.Data;
             WriteLiteral("</li>\r\n            <li>");
             EndContext();
             BeginContext(289, 72, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "14b1fe04f63244218c6ddea135cf08ee", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "383f9f7e65ce4c2e99804ef608fbe6fe", async() => {
                 BeginContext(335, 22, true);
                 WriteLiteral("Recieve Purchase Order");
                 EndContext();
@@ -115,7 +115,7 @@ using Weaselware.Lemur.Data;
             WriteLiteral("</li>\r\n            <li>");
             EndContext();
             BeginContext(384, 60, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "cb08ebd003d4492c89396c89c5867497", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bc63b381d5484651818ff244dd8fcf25", async() => {
                 BeginContext(429, 11, true);
                 WriteLiteral("Create Part");
                 EndContext();
@@ -138,7 +138,7 @@ using Weaselware.Lemur.Data;
             WriteLiteral("</li>\r\n            <li>");
             EndContext();
             BeginContext(467, 63, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dc079165ab654b54b7ce901822d9a94e", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dece698277034ad9a34ac86a4d79169b", async() => {
                 BeginContext(515, 11, true);
                 WriteLiteral("New Product");
                 EndContext();

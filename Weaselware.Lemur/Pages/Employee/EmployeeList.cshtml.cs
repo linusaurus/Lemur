@@ -28,7 +28,7 @@ namespace Weaselware.Lemur.Pages.Employee
             _context = context;
           
         }
-        [HttpGet()]
+        
         public async Task OnGetAsync(string currentFilter, string searchString, int? pageIndex)
         {
 

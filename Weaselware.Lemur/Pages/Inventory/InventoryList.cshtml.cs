@@ -17,57 +17,66 @@ namespace Weaselware.Lemur.Pages.Inventory
 
         public string CurrentFilter { get; set; }
         public int pageIndex;
-        public PaginatedList<PurchaseSQLDB.DataAccess.EFClasses.Inventory> Inventories { get; set; }
+        public PaginatedList<InventoryDto> Inventories { get; set; }
 
         public InventoryListModel(PurchaseSQLDBContext context)
         {
             _context = context;
         }
 
-        //public async Task OnGetAsync(string currentFilter, string searchString, int? pageIndex)
-        //{
+        public async Task OnGetAsync(string currentFilter, string searchString, int? pageIndex)
+        {
 
-        //    IQueryable<OrderDto> OrderIQ = _context.PurchaseOrder.Select(p => new OrderDto
-        //    {
-        //        PurchaseOrderID = p.OrderNum,
-        //        OrderDate = p.OrderDate.ToShortDateString(),
-        //        Supplier = p.Supplier.SupplierName,
-        //        JobName = p.Job.jobname,
-        //        Purchaser = p.Employee.firstname + " " + p.Employee.lastname,
-        //        OrderTotal = p.OrderTotal.ToString()
-        //    }).OrderByDescending(d => d.PurchaseOrderID);
+            IQueryable<InventoryDto> InventoryIQ = _context.Inventory.Select(p => new InventoryDto
+            {
+                PartID = p.PartID,
+                StockTransactionID = p.StockTransactionID,
+                LineID = p.LineID.GetValueOrDefault(),
+                Description = p.Description.Substring(0,85),
+                DateStamp = p.DateStamp.HasValue ? p.DateStamp.Value.ToShortDateString() : String.Empty,
+                OrderReceiptID = p.OrderReceiptID.GetValueOrDefault(),
+                PurchaseOrderID = p.OrderReciept.OrderNum.HasValue ? p.OrderReciept.OrderNum.Value : 0,
+                Location = p.Location,
+                Qnty = p.Qnty.GetValueOrDefault(),
+                StockBillID = p.StockBillID.GetValueOrDefault(),
+                UID = p.UnitOfMeasure.GetValueOrDefault(),
+                TransActionName = _context.UnitOfMeasure.Where(l => l.UID ==p.TransActionType).FirstOrDefault().UOM,
+                
+                
+            }).OrderByDescending(d => d.StockTransactionID);
 
-        //    CurrentFilter = searchString;
+            CurrentFilter = searchString;
 
-        //    if (searchString != null)
-        //    {
-        //        pageIndex = 1;
-        //    }
-        //    else
-        //    {
-        //        searchString = currentFilter;
-        //    }
+            if (searchString != null)
+            {
+                pageIndex = 1;
+            }
+            else
+            {
+                searchString = currentFilter;
+            }
 
-        //    CurrentFilter = searchString;
+            CurrentFilter = searchString;
 
-        //    if (!String.IsNullOrEmpty(searchString))
-        //    {
-        //        int orderNumber;
-        //        bool sucess = Int32.TryParse(searchString, out orderNumber);
-        //        if (sucess)
-        //        {
-        //            OrderIQ = OrderIQ.Where(l => l.PurchaseOrderID == orderNumber);
-        //        }
-        //        else
-        //        {
-        //            OrderIQ = OrderIQ.Where(s => s.JobName.Contains(searchString) || s.Supplier.Contains(searchString));
-        //        }
-        //    }
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                int stockTag;
+                bool sucess = Int32.TryParse(searchString, out stockTag);
+                if (sucess)
+                {
+                    InventoryIQ = InventoryIQ.Where(l => l.StockTransactionID == stockTag || l.PartID == stockTag);
+                }
+                else
+                {
+                    InventoryIQ = InventoryIQ.Where(s => s.Description.Contains(searchString) );
+                }
+            }
 
-        //    int pageSize = 16;
-        //    Inventories = await PaginatedList<OrderDto>.CreateAsync(
-        //        OrderIQ.AsNoTracking(), pageIndex ?? 1, pageSize);
+            int pageSize = 16;
+            Inventories = await PaginatedList<InventoryDto>.CreateAsync(
+                InventoryIQ.AsNoTracking(), pageIndex ?? 1, pageSize);
 
-        //}
+        }
+
     }
 }

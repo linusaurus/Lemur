@@ -74,7 +74,7 @@ using Weaselware.Lemur.Data;
             WriteLiteral("\r\n<!DOCTYPE html>\r\n\r\n<html>\r\n");
             EndContext();
             BeginContext(112, 100, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2c48656be14443f7aa30616079ee1a70", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2cd0e0e5f215491189a3fc16e85574a9", async() => {
                 BeginContext(118, 87, true);
                 WriteLiteral("\r\n    <meta name=\"viewport\" content=\"width=device-width\" />\r\n    <title>index</title>\r\n");
                 EndContext();
@@ -94,12 +94,12 @@ using Weaselware.Lemur.Data;
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(214, 3234, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c611e49315594d4ba2817287089edb6f", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c8040d9494594e6f9c35656afd80ae4e", async() => {
                 BeginContext(220, 51, true);
                 WriteLiteral("\r\n\r\n\r\n\r\n    <h4>Preformance Data</h4>\r\n\r\n  \r\n\r\n    ");
                 EndContext();
                 BeginContext(271, 399, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "603796aef1064e7595d0a4cb848234ca", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dd21dd1dfc514bc7bd903eefb27f2c8c", async() => {
                     BeginContext(329, 48, true);
                     WriteLiteral("\r\n        <input type=\"text\" name=\"SearchString\"");
                     EndContext();
@@ -114,7 +114,7 @@ WriteAttributeValue("", 385, Model.CurrentFilter, 385, 20, false);
                     WriteLiteral(" />\r\n        <button type=\"submit\" class=\"btn btn-sm btn-secondary ml-2\">\r\n            <span class=\"glyphicon glyphicon-search\" aria-hidden=\"true\"></span> Search\r\n        </button>\r\n        ");
                     EndContext();
                     BeginContext(596, 61, false);
-                    __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "99c1a24ac75e496b98c830616df0ede8", async() => {
+                    __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4f7b0b9775084edc9e38e7e79e40045c", async() => {
                         BeginContext(632, 21, true);
                         WriteLiteral(" |  Back to full List");
                         EndContext();
@@ -268,7 +268,7 @@ WriteAttributeValue("", 385, Model.CurrentFilter, 385, 20, false);
                 WriteLiteral("\r\n\r\n                    </td>\r\n                    <td>\r\n\r\n                        ");
                 EndContext();
                 BeginContext(2540, 63, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3d303c8210234960a7f98d69f514705e", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "de08cac87a5e4080b2987c1e0045ed2b", async() => {
                     BeginContext(2592, 7, true);
                     WriteLiteral("Details");
                     EndContext();
@@ -303,7 +303,7 @@ WriteAttributeValue("", 385, Model.CurrentFilter, 385, 20, false);
                 WriteLiteral(" |\r\n                        ");
                 EndContext();
                 BeginContext(2631, 57, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "343023e975994555bdd7fcbab9298c70", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "372d61d7330e426dab023a7ed5866963", async() => {
                     BeginContext(2680, 4, true);
                     WriteLiteral("Edit");
                     EndContext();
@@ -357,7 +357,7 @@ WriteAttributeValue("", 385, Model.CurrentFilter, 385, 20, false);
                 WriteLiteral("    </div>\r\n    ");
                 EndContext();
                 BeginContext(2997, 219, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7dd50da1cf0b47399b8b692288147416", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "38df7b54c3ed451ab62c0df180782b24", async() => {
                     BeginContext(3188, 24, true);
                     WriteLiteral("\r\n        Previous\r\n    ");
                     EndContext();
@@ -411,7 +411,7 @@ AddHtmlAttributeValue(" ", 3172, prevDisabled, 3173, 13, false);
                 WriteLiteral("\r\n    ");
                 EndContext();
                 BeginContext(3222, 215, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f3a19c1126ec4a209188939ce6e5f1a4", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b0b177b25b2c4a768c30b58b89b4683f", async() => {
                     BeginContext(3413, 20, true);
                     WriteLiteral("\r\n        Next\r\n    ");
                     EndContext();

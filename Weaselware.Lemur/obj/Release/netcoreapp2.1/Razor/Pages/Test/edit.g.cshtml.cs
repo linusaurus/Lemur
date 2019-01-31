@@ -59,7 +59,7 @@ using Weaselware.Lemur.Data;
             WriteLiteral("\r\n<!DOCTYPE html>\r\n\r\n<html>\r\n");
             EndContext();
             BeginContext(95, 99, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1a343ae9a4cf4bda80bdd41d92dda779", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "36776c16dc34457c93253968b4d93424", async() => {
                 BeginContext(101, 86, true);
                 WriteLiteral("\r\n    <meta name=\"viewport\" content=\"width=device-width\" />\r\n    <title>edit</title>\r\n");
                 EndContext();
@@ -79,7 +79,7 @@ using Weaselware.Lemur.Data;
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(196, 678, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "92e35eec14534862baf5256ebe9c1243", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f09957f30ed84efea2bf8ec1ab9ebdb2", async() => {
                 BeginContext(202, 665, true);
                 WriteLiteral(@"
     <div class=""row"">

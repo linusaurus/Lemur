@@ -154,7 +154,7 @@ using Weaselware.Lemur.Data;
             WriteLiteral("\r\n\r\n");
             EndContext();
             BeginContext(1517, 6728, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7a6119777ab24449afeb8556f1a44fb6", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "db946988d46b436a9be401483d23b0cd", async() => {
                 BeginContext(1523, 1035, true);
                 WriteLiteral(@"
 
@@ -308,7 +308,7 @@ using Weaselware.Lemur.Data;
                     <strong>Job :</strong> ");
                 EndContext();
                 BeginContext(3882, 89, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b740ba99b97042eabce6d64dfba13351", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "00565372731d44dd99d2a2ff8723ec7f", async() => {
                     BeginContext(3948, 19, false);
 #line 112 "C:\Users\rich.DESIGNSYNTHESIS\Source\Repos\Weaselware.Lemur\Weaselware.Lemur\Pages\Orders\OrderDetail.cshtml"
                                                                                                        Write(Model.Order.JobName);
@@ -395,7 +395,7 @@ using Weaselware.Lemur.Data;
                 WriteLiteral("</td>\r\n                                            <td>");
                 EndContext();
                 BeginContext(5390, 79, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1f1b0d4cc13645608ad3fd6b9758f540", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bc00b2ba4dcb4c7895182fcc68e01de3", async() => {
                     BeginContext(5446, 19, false);
 #line 138 "C:\Users\rich.DESIGNSYNTHESIS\Source\Repos\Weaselware.Lemur\Weaselware.Lemur\Pages\Orders\OrderDetail.cshtml"
                                                                                                   Write(i.PartID.ToString());
